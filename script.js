@@ -10,6 +10,10 @@
                 controller : 'mainController'
             })
 
+            .when("/home", {
+                templateURL : '/pages/home.html',
+                controller : 'mainController'
+            })
             // route for the about page
             .when("/about", {
                 templateUrl : 'pages/about.html',

@@ -6,14 +6,10 @@
     $routeProvider
             // route for the homepage
             .when("/", {
-                templateURL : '/pages/home.html',
+                templateUrl : 'pages/home.html',
                 controller : 'mainController'
             })
 
-            .when("/home", {
-                templateURL : '/pages/home.html',
-                controller : 'mainController'
-            })
             // route for the about page
             .when("/about", {
                 templateUrl : 'pages/about.html',
@@ -24,11 +20,6 @@
             .when("/contact", {
                 templateUrl : 'pages/contact.html',
                 controller  : 'contactController'
-            })
-        
-            .otherwise("/", {
-            templateURL : '/pages/home.html',
-            controller : 'mainController'
             });
     
     });
@@ -36,8 +27,6 @@
 
     // create the controller and inject Angular's $scope
     scotchApp.controller('mainController', function($scope) {
-
-        // create a message to display in our view
         $scope.message = 'Everyone come and see how good I look!';
     });
 
